@@ -10,14 +10,15 @@ class EditBakeryForm extends React.Component {
 			status: PropTypes.string,
 			price: PropTypes.number,
 		}),
-		// index: PropTypes.number,
+
 		updateItem: PropTypes.func,
+		deleteItem: PropTypes.func,
 	};
 
 	handleChange = (event) => {
 		console.log(event.currentTarget.value);
-		// Update that fish
-		// 1. Take a copy of the current fish
+		// Update that item
+		// 1. Take a copy of the current item
 
 		const updatedItem = {
 			...this.props.item,

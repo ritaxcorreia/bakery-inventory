@@ -28,7 +28,7 @@ class App extends React.Component {
 
 		this.ref = base.syncState(`${this.props.match.params.storeId}/items`, {
 			context: this,
-			state: "item",
+			state: "items",
 		});
 	}
 
@@ -46,9 +46,9 @@ class App extends React.Component {
 	addItem = (item) => {
 		// 1. Take a copy of the existing state
 		const items = { ...this.state.items }; // using a spread it creates a clone/copy of the same object
-		// 2. Add our new fish to the fishes variable
+		// 2. Add our new item to the items variable
 		items[`item${Date.now()}`] = item; // Using date now will give you a unique number (number of seconds since 1970 983947209472)
-		// 3. set the new fishes object to state
+		// 3. set the new items object to state
 		this.setState({ items });
 	};
 
@@ -117,9 +117,9 @@ class App extends React.Component {
 					removeFromOrder={this.removeFromOrder}
 				/>
 				<Inventory
-					addItem={this.addFish}
-					updateItem={this.updateFish}
-					deleteItem={this.deleteFish}
+					addItem={this.addItem}
+					updateItem={this.updateItem}
+					deleteItem={this.deleteItem}
 					loadSampleItems={this.loadSampleItems}
 					item={this.state.items}
 					storeId={this.props.match.params.storeId}

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { formatPrice } from "../helpers";
-
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class Order extends React.Component {
@@ -23,7 +22,7 @@ class Order extends React.Component {
 			return (
 				<li key={key}>
 					{" "}
-					Sorry {item ? item.name : "Item"} is sold out
+					Sorry, {item ? item.name : "item"} is sold out
 				</li>
 			);
 		}
@@ -39,13 +38,12 @@ class Order extends React.Component {
 							<CSSTransition
 								classNames="count"
 								key={count}
-								timeout={{ enter: 5000, exit: 5000 }}
+								timeout={{ enter: 300, exit: 300 }}
 							>
-								<span>{count}</span>
+								<span>{count} </span>
 							</CSSTransition>
 						</TransitionGroup>
-						lbs {item.name}
-						{formatPrice(count * item.price)}
+						{item.name} {formatPrice(count * item.price)}
 						<button onClick={() => this.props.removeFromOrder(key)}>
 							&times;{" "}
 						</button>
@@ -58,7 +56,7 @@ class Order extends React.Component {
 	render() {
 		const orderIds = Object.keys(this.props.order);
 		const total = orderIds.reduce((prevTotal, key) => {
-			const item = this.props.item[key];
+			const item = this.props.items[key];
 			const count = this.props.order[key];
 			const isAvailable = item && item.status === "available";
 

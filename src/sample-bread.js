@@ -4,7 +4,7 @@ const items = {
 		name: "Multigrain Bread",
 		image: "/images/pain-multigrain.png",
 		description:
-			"A large multigrain loaf made with a mix of wheat, barley, buckwheat flour and crushed soya seeds, topped with seeds.",
+			"A multigrain loaf made with wheat and rye flour topped with seeds.",
 		price: 350,
 		status: "available",
 	},
@@ -13,7 +13,7 @@ const items = {
 		name: "Pain de Champagne",
 		image: "/images/pain-champagne.png",
 		description:
-			"This is our rich, brown Country Bread made from a soft blend of natural yeast, rye flour, milled flour and sea salt.",
+			"Country Bread made from a soft blend of natural yeast, rye flour and sea salt.",
 		price: 320,
 		status: "available",
 	},
@@ -31,7 +31,7 @@ const items = {
 		name: "Olive Bread",
 		image: "/images/olive-bread.png",
 		description:
-			"Crusty but light, with an intense flavour of the olives of Provence, scented with thyme, this is irresistible.",
+			"Crusty but light, with an intense flavour of Provençal olives scented with thyme.",
 		price: 390,
 		status: "available",
 	},
@@ -40,7 +40,7 @@ const items = {
 		name: "French Baguette",
 		image: "/images/baguette.jpg",
 		description:
-			"A classic baguette made the old-fashioned way with white flour, natural yeast, sea salt and water.",
+			"Classic baguette made the old-fashioned way with white flour, natural yeast, sea salt and water.",
 		price: 120,
 		status: "available",
 	},
@@ -49,7 +49,7 @@ const items = {
 		name: "Cheese Straw",
 		image: "/images/cheese-straw.jpg",
 		description:
-			"This flaky cheese straw is made with aged cheddar and cracked black pepper",
+			"This flaky cheese straw is made with aged cheddar and cracked black pepper.",
 		price: 120,
 		status: "available",
 	},
@@ -58,7 +58,7 @@ const items = {
 		name: "All Butter Croissant",
 		image: "/images/croissant.jpg",
 		description:
-			"Start the day the Parisian way with an authentic and gloriously golden croissant, made with pure butter.",
+			"An authentic and gloriously golden croissant, made with pure butter.",
 		price: 100,
 		status: "available",
 	},
@@ -67,7 +67,7 @@ const items = {
 		name: "English Muffin",
 		image: "/images/english-muffin.jpg",
 		description:
-			"A Great Taste Award winner, our muffins are slow baked on a stove top, the traditional way.",
+			"Our muffins are slow baked on a stove top, the traditional way.",
 		price: 80,
 		status: "available",
 	},
@@ -76,7 +76,7 @@ const items = {
 		name: "Pain au Chocolat",
 		image: "/images/pain-choc.jpg",
 		description:
-			"Our Pain au Chocolat is a best seller for a reason, made with pure butter and a heart of rich dark chocolate.",
+			"Our Pain au Chocolat is made with pure butter and a heart of rich dark chocolate.",
 		price: 110,
 		status: "available",
 	},
