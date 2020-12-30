@@ -14,7 +14,7 @@ class Order extends React.Component {
 	renderOrder = (key) => {
 		const item = this.props.items[key];
 		const count = this.props.order[key];
-		// Make sure the fish is loaded before we continue
+		// Make sure the bakery item is loaded before we continue
 		if (!item) {
 			return null;
 		}

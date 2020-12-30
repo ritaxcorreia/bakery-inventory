@@ -51,7 +51,7 @@ header.top
       bottom 7px
 
 
-.catch-of-the-day
+.fresh-out-the-oven
   display flex
   height 90vh
   max-width:1500px
@@ -82,29 +82,6 @@ header.top
       flex-basis 50%
       transform translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px)
 
-// Folding Transforms
-// Take off folding when not checked
-input#fold:not(:checked) ~ #main
-  .catch-of-the-day > *
-      transform none
-
-label[for="fold"]
-  position absolute
-  top 1rem
-  left 1rem
-  text-transform uppercase
-  font-size 1.3rem
-  background black
-  color white
-  border 2px solid black
-  cursor pointer
-  padding 0.5rem 1rem
-
-input#fold
-  display none
-  &:checked + label
-    background white
-    color black
 
 ul
   list-style none
@@ -152,7 +129,7 @@ ul.order
 .order-title
   text-align center
 
-.fish-edit
+.item-edit
   margin-bottom 20px
   border 2px solid black
   overflow hidden
@@ -182,14 +159,14 @@ ul.order
 
 
 // Menu Styles
-.list-of-fish
+.list-of-items
   border-top 2px solid black
   border-bottom 1px solid black
   padding-top 5px
   margin-top 2rem
   transform translateZ(0);
 
-.menu-fish
+.menu-item
   border-bottom 2px solid black
   border-top 1px solid black
   padding-bottom 2rem

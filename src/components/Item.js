@@ -26,9 +26,9 @@ class Item extends React.Component {
 		const isAvailable = status === "available";
 
 		return (
-			<li className="menu-fish">
+			<li className="menu-items">
 				<img src={image} alt={name} />
-				<h3 className="fish-name">
+				<h3 className="item-name">
 					{name}
 					<span className="price">{formatPrice(price)}</span>
 				</h3>

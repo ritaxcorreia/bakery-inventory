@@ -28,7 +28,7 @@ class EditBakeryForm extends React.Component {
 
 	render() {
 		return (
-			<div className="fish-edit">
+			<div className="item-edit">
 				<input
 					type="text"
 					name="name"

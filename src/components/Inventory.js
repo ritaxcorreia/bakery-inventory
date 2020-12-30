@@ -11,7 +11,7 @@ class Inventory extends React.Component {
 		item: PropTypes.object,
 		updateItem: PropTypes.func,
 		deleteItem: PropTypes.func,
-		loadSampleBreads: PropTypes.func,
+		loadSampleItems: PropTypes.func,
 	};
 
 	state = {
@@ -88,7 +88,7 @@ class Inventory extends React.Component {
 					></EditBakeryForm>
 				))}
 				<AddBakeryForm addItem={this.props.addItem}></AddBakeryForm>
-				<button onClick={this.props.loadSampleBreads}>
+				<button onClick={this.props.loadSampleItems}>
 					Load Sample Items
 				</button>
 				{logout}

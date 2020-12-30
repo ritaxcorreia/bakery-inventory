@@ -2,16 +2,16 @@
 const items = {
 	item1: {
 		name: "Multigrain Bread",
-		image: "/images/pain-multigrain.jpg",
+		image: "/images/pain-multigrain.png",
 		description:
-			"A large, round multigrain loaf made with a mix of wheat, barley, spelt, rye and buckwheat flour with added buckwheat and crushed soya seeds, topped with pumpkin, sunflower, millet, brown flax and sesame seeds.",
+			"A large multigrain loaf made with a mix of wheat, barley, buckwheat flour and crushed soya seeds, topped with seeds.",
 		price: 350,
 		status: "available",
 	},
 
 	item2: {
 		name: "Pain de Champagne",
-		image: "/images/pain-champagne.jpg",
+		image: "/images/pain-champagne.png",
 		description:
 			"This is our rich, brown Country Bread made from a soft blend of natural yeast, rye flour, milled flour and sea salt.",
 		price: 320,
@@ -20,7 +20,7 @@ const items = {
 
 	item3: {
 		name: "Pain Ancien",
-		image: "/images/pain-ancien.jpg",
+		image: "/images/pain-ancien.png",
 		description:
 			"Wonderfully versatile, everyday bread loaf, made with our selected flour, sea salt and natural yeast.",
 		price: 350,
@@ -29,7 +29,7 @@ const items = {
 
 	item4: {
 		name: "Olive Bread",
-		image: "/images/olive-bread.jpg",
+		image: "/images/olive-bread.png",
 		description:
 			"Crusty but light, with an intense flavour of the olives of Provence, scented with thyme, this is irresistible.",
 		price: 390,
@@ -41,7 +41,7 @@ const items = {
 		image: "/images/baguette.jpg",
 		description:
 			"A classic baguette made the old-fashioned way with white flour, natural yeast, sea salt and water.",
-		price: 4234,
+		price: 120,
 		status: "available",
 	},
 
@@ -67,7 +67,7 @@ const items = {
 		name: "English Muffin",
 		image: "/images/english-muffin.jpg",
 		description:
-			"90g each. A Great Taste Award winner, our muffins are slow baked on a stove top, the traditional way.",
+			"A Great Taste Award winner, our muffins are slow baked on a stove top, the traditional way.",
 		price: 80,
 		status: "available",
 	},

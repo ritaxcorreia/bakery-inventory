@@ -6,8 +6,8 @@ const Header = (props) => {
 		<header className="top">
 			<h1>
 				Fresh
-				<span className="ofThe">
-					<span className="of">Out</span>
+				<span className="outThe">
+					<span className="out">Out</span>
 					<span className="the">The</span>
 				</span>
 				Oven

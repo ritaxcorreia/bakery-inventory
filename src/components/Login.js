@@ -5,6 +5,14 @@ const Login = (props) => (
 	<nav className="login">
 		<h2>Inventory login</h2>
 		<p>Sign in to manage your bakery's inventory</p>
+
+		<button
+			className="twitter"
+			onClick={() => props.authenticate("Twitter")}
+		>
+			Login with Twitter
+		</button>
+
 		<button className="github" onClick={() => props.authenticate("Github")}>
 			Login with GitHub
 		</button>
